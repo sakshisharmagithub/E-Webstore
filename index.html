@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surreal Fashion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the World of Surreal Fashion</h1>
+    <p>Immerse yourself in the extraordinary with Gucci, Luvoire, Versace, and Rovano—four iconic brands redefining luxury through surreal artistry.</p>
+  </header>
+  
+  <section class="brands">
+    <div class="brand" id="gucci">
+      <h2>Gucci</h2>
+      <p>Enter a dreamlike realm with bold artistry, unexpected contrasts, and fantastical textures that transform elegance into an art form.</p>
+      <button onclick="exploreBrand('Gucci')">Explore Gucci</button>
+    </div>
+    <div class="brand" id="luvoire">
+      <h2>Luvoire</h2>
+      <p>Discover flowing fabrics and ethereal prints that blur the boundaries between imagination and reality, creating timeless designs.</p>
+      <button onclick="exploreBrand('Luvoire')">Explore Luvoire</button>
+    </div>
+    <div class="brand" id="versace">
+      <h2>Versace</h2>
+      <p>Elevate your wardrobe with opulent sculptural creations and striking motifs that exude confidence and sophistication.</p>
+      <button onclick="exploreBrand('Versace')">Explore Versace</button>
+    </div>
+    <div class="brand" id="rovano">
+      <h2>Rovano</h2>
+      <p>Play with vibrant contrasts and intricate details, transforming everyday fashion into bold, wearable masterpieces.</p>
+      <button onclick="exploreBrand('Rovano')">Explore Rovano</button>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2024 Surreal Fashion. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript function for interactivity
+    function exploreBrand(brand) {
+      // Display a message or redirect to a brand-specific page
+      if (brand === "Gucci") {
+        window.location.href = "https://www.gucci.com"; // Replace with actual Gucci collection URL
+      } else if (brand === "Luvoire") {
+        window.location.href = "https://www.luvoire.com"; // Replace with actual Luvoire collection URL
+      } else if (brand === "Versace") {
+        window.location.href = "https://www.versace.com"; // Replace with actual Versace collection URL
+      } else if (brand === "Rovano") {
+        window.location.href = "https://www.rovano.com"; // Replace with actual Rovano collection URL
+      }
+      // Optionally, you can use alert instead of redirection for basic functionality
+      // alert(`Explore ${brand}'s collection in 3D!`);
+    }
+  </script>
+</body>
+</html>
